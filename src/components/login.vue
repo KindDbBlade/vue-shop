@@ -12,7 +12,7 @@
         <el-form-item>
           <el-input prefix-icon="iconfont icon-3702mima"></el-input>
         </el-form-item>
-        <!-- ��ť -->
+        <!-- ??? -->
         <el-form-item class="btns">
           <el-button type="primary">登录</el-button>
           <el-button type="info">重置</el-button>
