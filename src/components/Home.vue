@@ -16,6 +16,7 @@
 
         <!-- 侧边栏菜单区 -->
         <el-menu
+          :default-active="activePath"
           router
           :collapse="isCollapse"
           :collapse-transition="false"
@@ -35,6 +36,7 @@
             </template>
             <!-- 二级菜单 -->
             <el-menu-item
+              @click="saveNavState('/'+subItem.path)"
               :index="'/'+subItem.path + ''"
               v-for="subItem in item.children"
               :key="subItem.id"
@@ -76,6 +78,7 @@ export default {
   },
   created() {
     this.getMenuList();
+    this.activePath = window.sessionStorage.getItem("activePath");
   },
   methods: {
     loginout() {
@@ -92,6 +95,10 @@ export default {
     //折叠菜单按钮
     toggleCollpse() {
       this.isCollapse = !this.isCollapse;
+    },
+    saveNavState(activePath) {
+      window.sessionStorage.setItem("activePath", activePath);
+      this.activePath = activePath;
     }
   }
 };
