@@ -25,3 +25,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### 0202-06-03
 用户登录功能
+
+### 0202-06-11
+用户列表功能
+
+### 0202-06-12
+vue.config.js
