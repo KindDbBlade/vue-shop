@@ -27,11 +27,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 用户登录功能
 
 ### 0202-06-11
-<<<<<<< HEAD
-用户信息列表增删改查功能
-=======
 用户列表功能
 
 ### 0202-06-12
 vue.config.js
->>>>>>> deda2bcff6ed06c9507e6fb28d272d0d7ed1ba84
+
+### 0202-06-15
+权限 rights
